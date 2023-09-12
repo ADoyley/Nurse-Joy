@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --60 : #007BFF;
+    --backdrop :  #FFFFFF;
+    --30 : #F5F5F5;
+    --10 : #4CAF50;
+    --alert : #FF5722;
+    --highlight : #FFC107;
+    --complement : #009688;
+    --cta : #9C27B0;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 769px;
+    height: 100vh;
+    background-color: var(--60);
+    color: var(--30);
+    text-shadow: 0 0 5px var(--complement);
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display:flex;
+    width: 100%;
+    min-height: 8vh;
+    padding: 5px 0;
+    overflow: hidden;
+    align-items: center;
+    background-color: var(--30);
+}
+
+header .logo, header .log-out{
+    width: 25%;
+}
+
+.logo{
+    padding: 0 20px;
+}
+
+.logo img{
+    width: 6rem;
+    object-fit: contain;
+}
+
+.search-bar{
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.search-bar input{
+    width: clamp(150px, 80%, 400px);
+    height: 32px;
+    border-radius: 50px;
+    border: 5px solid var(--60);
+    background-color: transparent;
+    
+}
+
+.search-bar i{
+    position: relative;
+    top: 2px;
+    right: 40px;
+    color: var(--60);
+    text-shadow: none;
+}
+
+.log-out button{
+    margin-left: 60px;
+    background-color: var(--cta);
+    color: var(--30);
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 2px solid var(--30);
+    transition: 0.3s ease-in-out;
+}
+
+.log-out button:hover{
+    background-color: var(--30);
+    color: var(--cta);
+    letter-spacing: 2px;
+    border: 2px solid var(--cta);
+    padding: 12px 18px;
+}
+
+.log-out button:active{
+    background-color: var(--30);
+    letter-spacing: 0px;
+    color: var(--cta);
+    border: 2px solid var(--cta);
+    padding: 12px 24px;
+    transition: 0.1s;
+}
+
+
+main{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.starting{
+    font-size: 2rem;
+    text-indent: 100px;
+    line-height: -0.8;
+}
+
+.next{
+    line-height: 0.8;
+    font-size: 2rem;
+    text-indent: 200px;
+}
+
+.log-count{
+    font-size: 8rem;
+    color: var(--highlight);
+}
+
+.opts{
+    margin-left: 170px;
+}
+
+.create{
+    background-color: var(--complement);
+    color: var(--backdrop);
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 2px solid var(--complement);
+    transition: 0.3s ease-in-out;
+}
+
+.create:hover{
+    background-color: var(--backdrop);
+    color: var(--complement);
+    letter-spacing: 2px;
+    border: 2px solid var(--complement);
+    padding: 12px 19px;
+    
+}
+
+.create:active{
+    background-color: var(--complement);
+    letter-spacing: 0px;
+    color: var(--backdrop);
+    border: 2px solid var(--complement);
+    padding: 12px 24px;
+    transition: 0.1s;
+}
+
+
+.log-btn{
+    background-color: var(--30);
+    color: var(--60);
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 2px solid var(--30);
+    transition: 0.3s ease-in-out;
+}
+
+.log-btn:hover{
+    background-color: var(--backdrop);
+    color: var(--60);
+    letter-spacing: 2px;
+    border: 2px solid var(--30);
+    padding: 12px 19px;
+    
+}
+
+.log-btn:active{
+    background-color: var(--60);
+    letter-spacing: 0px;
+    color: var(--backdrop);
+    border: 2px solid var(--30);
+    padding: 12px 24px;
+    transition: 0.1s;
+}
+
