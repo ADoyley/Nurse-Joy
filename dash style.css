@@ -57,12 +57,14 @@ header .logo, header .log-out{
 
 .search-bar input{
     width: clamp(150px, 80%, 400px);
-    height: 32px;
+    height: 36px;
     border-radius: 50px;
     border: 5px solid var(--60);
     background-color: transparent;
     
 }
+
+
 
 .search-bar i{
     position: relative;
@@ -74,7 +76,7 @@ header .logo, header .log-out{
 
 .log-out button{
     margin-left: 60px;
-    background-color: var(--cta);
+    background-color: var(--10);
     color: var(--30);
     font-size: 16px;
     padding: 12px 24px;
@@ -85,9 +87,9 @@ header .logo, header .log-out{
 
 .log-out button:hover{
     background-color: var(--30);
-    color: var(--cta);
+    color: var(--10);
     letter-spacing: 2px;
-    border: 2px solid var(--cta);
+    border: 2px solid var(--10);
     padding: 12px 18px;
 }
 
@@ -102,6 +104,7 @@ header .logo, header .log-out{
 
 
 main{
+    height: 80vh;
     width: 100%;
     display: grid;
     place-content: center;
@@ -133,29 +136,29 @@ h1{
 }
 
 .create{
-    background-color: var(--complement);
+    background-color: var(--10);
     color: var(--backdrop);
     font-size: 16px;
     padding: 12px 24px;
     border-radius: 12px;
-    border: 2px solid var(--complement);
+    border: 2px solid var(--10);
     transition: 0.3s ease-in-out;
 }
 
 .create:hover{
     background-color: var(--backdrop);
-    color: var(--complement);
+    color: var(--10);
     letter-spacing: 2px;
-    border: 2px solid var(--complement);
+    border: 2px solid var(--10);
     padding: 12px 19px;
     
 }
 
 .create:active{
-    background-color: var(--complement);
+    background-color: var(--10);
     letter-spacing: 0px;
     color: var(--backdrop);
-    border: 2px solid var(--complement);
+    border: 2px solid var(--10);
     padding: 12px 24px;
     transition: 0.1s;
 }
@@ -177,7 +180,7 @@ h1{
     letter-spacing: 2px;
     border: 2px solid var(--30);
     padding: 12px 19px;
-    
+    box-shadow: 0 0 3px var(--backdrop);
 }
 
 .log-btn:active{

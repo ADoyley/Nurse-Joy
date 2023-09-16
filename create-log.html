@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login style.css">
+    <!--For FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dash style.css">
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="login.js"></script> 
+    <title>Create - Nurse Joy</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="NJ-hat-3.png" alt="logo">
+        </section>
+        <section class="search-bar">
+            <input type="search">
+            <i class="fas fa-search"></i>
+        </section>
+        <section class="log-out">
+            <button>Logout</button>
+        </section>
+    </header>
+    <main>
+        <section class="container">
+            <h1>Log - Create</h1>
+            <form action="">
+                <article class="form-control">
+                    <input type="text" required />
+                    <label for="">Name</label>
+                </article>
+                <article class="form-control">
+                    <input type="text" required />
+                    <label for="">What Department</label>
+                </article>
+                <article class="form-group">
+                    <label for="gender">Gender</label>
+                    <br><br>
+                    <select id="gender" name="gender" >
+                        <option value="">-</option>
+                        <option value="male">M</option>
+                        <option value="female">F</option>
+                    </select>
+                </article>
+                <article class="form-group">
+                    <label for="details">Details</label>
+                    <br><br>
+                    <textarea name="details" id="details" cols="30" rows="10" placeholder="Write something..."></textarea>
+                </article>
+                <button class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
